@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h2>Oi</h2>
+    <h2>Tela de alunos</h2>
     <form method="post">
         {{ form }}
-        {% csrf_token %}
+        {% csrf_token %}      
         <input type="submit" value="Gravar" />
     </form>
 {% endblock %}
