@@ -14,6 +14,9 @@ urlpatterns = [
     path('editar_aluno/<int:id>', views.editarAluno,
          name='editar_aluno'),
 
+    path('excluir_aluno/<int:id>', views.excluirAluno,
+         name='excluir_aluno'),
+
     #Cursos
     #path('')
 ]

@@ -40,5 +40,12 @@ def editarAluno(request, id):
     return render(request, 'incluir_aluno.html',
                   {'form': form})
 
+
+def excluirAluno(request, id):
+    aluno = Aluno.objects.get(id=id)
+    aluno.delete()
+    return redirect('listar_alunos')
+
+
 def listarCurso(request):
     pass
