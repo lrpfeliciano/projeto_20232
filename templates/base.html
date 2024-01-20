@@ -1,9 +1,11 @@
+{% load django_bootstrap5 %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema online</title>
+    {% bootstrap_css %}
 </head>
 <body>
     <a href="{% url 'listar_alunos' %}">Alunos</a>
@@ -12,4 +14,5 @@
     {% block content %}
     {% endblock %}
 </body>
+    {% bootstrap_javascript %}
 </html>
